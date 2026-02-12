@@ -452,3 +452,60 @@
 //     tableauExposant2.push(resultat);
 // }
 // console.log(tableauExposant2);
+
+/* Exercice 24 */
+
+// // Demande le nombre joueur
+// let joueur = parseInt(Prompt("Combien de joueur ?"));
+
+
+// // On s'assure que cette valeur ne dépasse pas 10
+// while (joueur > 10 || joueur < 0) {
+//     alert("Nombre de joueur incorrect");
+//     joueur = parseInt(Prompt("Combien de joueur ?"));
+// }
+
+// // On demande le score pour chaque joueur
+// let scores = [];
+// for (let i = 0; i < joueur; i++) {
+//     scores[i] = parseInt(Prompt("Quel est le score du joueur "+(i+1)+" ?"));
+// }
+
+// // On calcul la somme des scores
+// let resultat = 0;
+// for (let i = 0; i < joueur; i++) {
+//     resultat = resultat + scores[i];
+// }
+
+// // on calcul la moyenne
+// resultat = resultat / joueur;
+
+// console.log("La moyenne est de "+ resultat);
+
+/* Exercice 25 */
+
+let array = [1,2,3];
+
+let reversedArray = [];
+
+for(let i = 0; i < array.length; i++) {
+    reversedArray.push(array[array.length - i - 1 ])
+}
+
+console.log(array);
+console.log(reversedArray);
+
+/* Exercice 26 */
+
+let tableauDesordonne = [1, 41 , 10, 20, 15];
+
+for (let i = 0; i < tableauDesordonne.length - 1; i++){
+    for (let j = 0; j < tableauDesordonne.length - i; j++) {
+            
+        if (tableauDesordonne[j] > tableauDesordonne[j+1]) {
+            let temp = tableauDesordonne[j];
+            tableauDesordonne[j] = tableauDesordonne[j+1];
+            tableauDesordonne[j+1] = temp;
+        }
+    }
+}
