@@ -415,3 +415,40 @@
 //     exposant = exposant + 1;
 // } while(exposant < exposantMax)
 // alert(resultat);
+
+
+/* les tableaux et la boucle for */
+
+
+/* Exercice 22 */
+// let monTableau = [];
+
+
+// monTableau[0] = prompt("Proposez moi un nombre entier");
+// monTableau[1] = prompt("Proposez moi un nombre entier");
+// monTableau[2] = prompt("Proposez moi un nombre entier");
+// monTableau[3] = prompt("Proposez moi un nombre entier");
+// monTableau[4] = prompt("Proposez moi un nombre entier");
+// monTableau[5] = prompt("Proposez moi un nombre entier");
+
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+// monTableau.push(prompt("Proposez moi un nombre entier"));
+
+// console.log(monTableau);
+
+/* Exercice 23 */
+
+// let tableauExposant2 = [];
+
+// let x = 1;
+// for (let i = 0; i < 10; i++){
+//     let resultat = 2 ** x;
+//     x++;
+
+//     tableauExposant2.push(resultat);
+// }
+// console.log(tableauExposant2);
