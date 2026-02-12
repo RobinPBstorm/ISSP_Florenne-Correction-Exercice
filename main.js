@@ -484,28 +484,93 @@
 
 /* Exercice 25 */
 
-let array = [1,2,3];
+// let array = [1,2,3];
 
-let reversedArray = [];
+// let reversedArray = [];
 
-for(let i = 0; i < array.length; i++) {
-    reversedArray.push(array[array.length - i - 1 ])
-}
+// for(let i = 0; i < array.length; i++) {
+//     reversedArray.push(array[array.length - i - 1 ])
+// }
 
-console.log(array);
-console.log(reversedArray);
+// console.log(array);
+// console.log(reversedArray);
 
-/* Exercice 26 */
+// /* Exercice 26 */
 
-let tableauDesordonne = [1, 41 , 10, 20, 15];
+// let tableauDesordonne = [1, 41 , 10, 20, 15];
 
-for (let i = 0; i < tableauDesordonne.length - 1; i++){
-    for (let j = 0; j < tableauDesordonne.length - i; j++) {
+// for (let i = 0; i < tableauDesordonne.length - 1; i++){
+//     for (let j = 0; j < tableauDesordonne.length - i; j++) {
             
-        if (tableauDesordonne[j] > tableauDesordonne[j+1]) {
-            let temp = tableauDesordonne[j];
-            tableauDesordonne[j] = tableauDesordonne[j+1];
-            tableauDesordonne[j+1] = temp;
-        }
-    }
-}
+//         if (tableauDesordonne[j] > tableauDesordonne[j+1]) {
+//             let temp = tableauDesordonne[j];
+//             tableauDesordonne[j] = tableauDesordonne[j+1];
+//             tableauDesordonne[j+1] = temp;
+//         }
+//     }
+// }
+
+/* Exercice 33 */
+// function carree(valeur) {
+//     return valeur * valeur;
+// }
+
+// let nombre = parseInt(prompt("Quelle est votre nombre?"));
+// console.log(carree(nombre));
+// console.log(carree(5));
+// console.log(carree(16));
+
+/* Exercice 34 */
+// let valeurRecherche;
+// let tab = [3, 4, 5, 6];
+
+// function recherche(tableau, taille, valeurRecherche){
+//     let index = -1;
+//     for (let i = 0; i < taille && index == -1; i++){
+//         if (tableau[i] == valeurRecherche) {
+//             index = i
+//         }
+//     }
+//     return index;
+// }
+
+// console.log(recherche(tab, tab.length, 8));
+
+/* Exercice 35 */
+// function fusionnerTableauWael(t1, t2) {
+//     return [...t1, ...t2];
+// }
+
+// function fusionnerTableauBastien (t1,t2, fusion) {
+//     for (let i = 0 ; i < t1.length; i++){
+//         fusion.push(t1[i]);
+//     }
+    
+//     for (let i = 0 ; i < t2.length; i++){
+//         fusion.push(t2[i]);
+//     }
+// }
+
+// function fusionTableau(t1,t2) {
+//     let result = [];
+
+//     for(let i = 0; i < t1.length || i < t2.length;i++){
+//         if (i < t1.length) {
+//             result.push(t1[i]);
+//         }
+//         if (i < t2.length) {
+//             result.push(t2[i]);
+//         }
+//     }
+
+//     return result;
+// }
+
+// const t1 = [10,20,30]
+// const t2 = [60,70,80,90,100]
+// const fusion = []
+
+// console.log(fusionnerTableauWael(t1,t2));
+// fusionnerTableauBastien(t1,t2,fusion)
+// console.log(fusionTableau(t1,t2));
+
